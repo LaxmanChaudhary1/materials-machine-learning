@@ -1,45 +1,32 @@
-# Material Science Machine Learning Repository
+# Machine Learning for Materials Science
 
-This repository contains machine learning models and data for material science research. The repository is organized into five directories:
+Research and development repository for applying classical machine-learning and neural-network methods to materials-property prediction.
 
-- [Code](#code): Contains Python scripts and Jupyter notebooks for training and evaluating machine learning models.
-- [Data](#data): Stores datasets and data preprocessing scripts.
-- [Images](#images): Includes images, plots, and visualizations generated during analysis.
-- [License](#license): Provides licensing information for code and data usage.
-- [_pycache_](#_pycache_): Stores cached Python files generated during code execution (can be safely ignored).
+## What is here
 
-## Directory Structure
+- `code/` — Python scripts for model training, tuning, analysis, and plotting.
+- `data/` — datasets used by the workflows.
+- `image/` — generated figures and visualizations.
+- `xbgm.slurm` and related files — HPC job scripts retained from the original workflow.
 
+Representative methods in `code/` include artificial neural networks, LightGBM, stochastic-gradient methods, random forests, and XGBoost-based workflows, together with preprocessing and error-analysis utilities.
 
-## Code
+## Purpose
 
-The [Code](/Code) directory contains Python scripts and Jupyter notebooks for training and evaluating machine learning models related to material science. You can explore and run these scripts to understand how the models were developed and to apply them to your own data.
+This repository documents an earlier materials-informatics workflow and serves as a research archive. It is not intended to be a polished Python package. The emphasis is on preserving the computational workflow while making the repository easier to understand and navigate.
 
-## Data
+## Suggested navigation
 
-The [Data](/Data) directory stores datasets used in the machine learning models and any data preprocessing scripts. You may find datasets in various formats (e.g., CSV, Excel) along with scripts to clean, transform, or preprocess the data.
+1. Start in `code/` to identify the model or analysis workflow of interest.
+2. Check `data/` for the corresponding input datasets.
+3. Use files in `image/` to inspect generated results and diagnostics.
+4. Treat HPC submission scripts as environment-specific examples rather than portable defaults.
 
-## Images
+## Repository hygiene
 
-The [Images](/Images) directory includes images, plots, and visualizations generated during the analysis and model evaluation process. These images provide insights into the performance of the models and the characteristics of the data.
+Generated Python cache files and Jupyter checkpoints should not be committed. A `.gitignore` is included to prevent these artifacts from being added in future work.
 
-## License
+## Author
 
-The [License](/License) directory provides licensing information for the code and data used in this repository. Please review the licensing terms before using any code or data from this repository.
-
-## _pycache_
-
-The [_pycache_](/_pycache_) directory stores cached Python files generated during the execution of code scripts. These files are automatically generated and can be safely ignored.
-
-## Licensing
-
-This repository is not open-source. You are not free to use, modify, and distribute the code and data within the terms of the license. Attribution is required when using the code or data (refer to the [License](/License/LICENSE.txt) directory for details).
-
-If you have any questions, suggestions, or contributions, please feel free to reach out or create a pull request.
-
----
-
-Laxman Chaudhary
-chylaxman77@gmail.com/laxman2023chaudhary@gmail.com
-
-
+**Laxman Chaudhary**  
+Computational materials physics, machine learning for materials, and scientific computing.
